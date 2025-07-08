@@ -313,7 +313,7 @@ public class Test {
     }
 
     /**
-     * Starts the communication with EMMA Servers with a new EMMA configuration.
+     * Starts the communication with EMMA Servers with a new EMMA configuration. fjaljflasflkanflkalfknal lan
      *
      * @param configuration The EMMA configuration.
      * @param sessionStartListener Listener to notify when the session is started
