@@ -111,7 +111,7 @@
   <div class="breadcrumbs"><a href="../../../index.html">EMMA Developer</a><span class="delimiter">/</span><a href="../index.html">com.example.emmaintegrationtest</a><span class="delimiter">/</span><span class="current">MainActivity</span></div>
   <div class="cover ">
     <h1 class="cover"><span>Main</span><wbr></wbr><span><span>Activity</span></span></h1>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">MainActivity</a> : <a href="https://developer.android.com/reference/kotlin/androidx/appcompat/app/AppCompatActivity.html">AppCompatActivity</a>, <span data-unresolved-link="io.emma.android.interfaces/EMMAUserInfoInterface///PointingToDeclaration/">EMMAUserInfoInterface</span></div><p class="paragraph">Actividad principal de la aplicación.</p><p class="paragraph">El uso de la clase es para probar las diferentes funcionalidades que presenta EMMA.</p><p class="paragraph">Se ha seguido la siguiente <a href="https://developer.emma.io/es/android/integracion-sdk">documentación</a> de integración.</p><p class="paragraph">La clase está estructurada de la siguiente manera</p><div class="sample-container"><div id="mermaid-container-3oudldau8rl3q"></div></div><script>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">MainActivity</a> : <a href="https://developer.android.com/reference/kotlin/androidx/appcompat/app/AppCompatActivity.html">AppCompatActivity</a>, <span data-unresolved-link="io.emma.android.interfaces/EMMAUserInfoInterface///PointingToDeclaration/">EMMAUserInfoInterface</span></div><p class="paragraph">Actividad principal de la aplicación.</p><p class="paragraph">El uso de la clase es para probar las diferentes funcionalidades que presenta EMMA.</p><p class="paragraph">Se ha seguido la siguiente <a href="https://developer.emma.io/es/android/integracion-sdk">documentación</a> de integración.</p><p class="paragraph">La clase está estructurada de la siguiente manera</p><div class="sample-container"><div id="mermaid-container-7816ndn7ivsdg"></div></div><script>
 window.addEventListener('load', function() {
   var graphDef =  `---
 title: Estructura de la clase
@@ -141,9 +141,9 @@ classDiagram
     }
     MainActivity ..|> EMMAUserInfoInterface
     MainActivity --|> AppCompatActivity`;
-  var container = document.getElementById('mermaid-container-3oudldau8rl3q');
-  container.innerHTML = '<div id="mermaid-target-3oudldau8rl3q"></div>';
-  var updateGraph3oudldau8rl3q = function() {
+  var container = document.getElementById('mermaid-container-7816ndn7ivsdg');
+  container.innerHTML = '<div id="mermaid-target-7816ndn7ivsdg"></div>';
+  var updateGraph7816ndn7ivsdg = function() {
     // setTimeout required or else the 1st render could be done before mermaid.initialize() has applied the theme.
     // Also required because we can't listen to localStorage events reliably, and it's changed on the same click event...
     setTimeout(() => {
@@ -154,19 +154,19 @@ classDiagram
         theme = 'dark';
       }
       mermaid.initialize({'theme': theme});
-      mermaid.render('mermaid-target-3oudldau8rl3q', graphDef).then(({ svg, bindFunctions }) => {
+      mermaid.render('mermaid-target-7816ndn7ivsdg', graphDef).then(({ svg, bindFunctions }) => {
           container.innerHTML = svg;
           // Trick to make the graph takes only the required height.
-          document.getElementById('mermaid-target-3oudldau8rl3q').removeAttribute('height')
+          document.getElementById('mermaid-target-7816ndn7ivsdg').removeAttribute('height')
           bindFunctions?.(element);
       });
     }, 0);
   }
-  updateGraph3oudldau8rl3q();
+  updateGraph7816ndn7ivsdg();
   
   var themeToggleButton = document.getElementById('theme-toggle-button');
   themeToggleButton.addEventListener('click', () => {
-    updateGraph3oudldau8rl3q();
+    updateGraph7816ndn7ivsdg();
   });
 });</script><h4 class="">See also</h4><div class="table"><div class="table-row" data-filterable-current=":app/release" data-filterable-set=":app/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="https://developer.android.com/reference/kotlin/androidx/appcompat/app/AppCompatActivity.html"><span>App</span><wbr></wbr><span>Compat</span><wbr></wbr><span><span>Activity</span></span></a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":app/release" data-filterable-set=":app/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><span data-unresolved-link="io.emma.android.interfaces/EMMAUserInfoInterface///PointingToDeclaration/"><span>EMMAUser</span><wbr></wbr><span>Info</span><wbr></wbr><span><span>Interface</span></span></span></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":app/release" data-filterable-set=":app/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><span data-unresolved-link="io.emma.android.utils/EMMALog///PointingToDeclaration/"><span><span>EMMALog</span></span></span></div></span></div><div></div></div></div></div></div></div>
   </div>

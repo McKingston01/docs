@@ -41,27 +41,17 @@ jobs:
           echo "sdk.dir=$ANDROID_SDK_ROOT" > local.properties
           chmod +x ./gradlew
 
+      - name: Clean previous Dokka output
+        run: rm -rf docs/dokka
+
       - name: Generate Dokka documentation
-        run: ./gradlew dokkaGenerate --stacktrace --info
+        run: ./gradlew clean dokkaGenerate --stacktrace --info
 
-      - name: Flatten Dokka documentation into public/
+      - name: Prepare public/ for GitHub Pages
         run: |
-          mkdir -p public
-
-          cp -r docs/dokka/images public/ || true
-          cp -r docs/dokka/scripts public/ || true
-          cp -r docs/dokka/styles public/ || true
-          cp -r docs/dokka/ui-kit public/ || true
-          cp -r docs/assets public/assets || true
-          cp docs/dokka/dokka-mermaid.js public/ || true
-          cp docs/dokka/index.html public/ || true
-          cp docs/dokka/navigation.html public/ || true
-
-          MODULODIR=$(find docs/dokka -maxdepth 1 -type d -name "*-*developer" -print -quit)
-          if [ -d "$MODULODIR" ]; then
-            cp -r "$MODULODIR"/* public/
-          fi
-
+          rm -rf public
+          mkdir public
+          cp -r docs/dokka/. public/
           touch public/.nojekyll
 
       - name: Ensure gh-pages branch exists
