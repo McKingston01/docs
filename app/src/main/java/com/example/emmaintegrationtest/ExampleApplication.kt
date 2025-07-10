@@ -27,9 +27,7 @@ class ExampleApplication : Application() {
         EMMA.getInstance().setDebuggerOutput(true)
     }
 
-    /**
-     * Configuración de la aplicación
-     */
+
     private fun emmaConfiguration() {
         // Configuración de la aplicación
         val configuration = EMMA.Configuration.Builder(this)
